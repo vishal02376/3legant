@@ -14,11 +14,11 @@ const Navbar = ({ SetLogin }) => {
   return (
     <div className='navBar'>
       {/* <img src={assets.logo} alt="" className='logo' /> */}
-      <h1 className="logo">TiF-fin</h1>
+      <h1 className="logo">3legant</h1>
       <div className={`Navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <Link to='/' onClick={() => { setMenu('Home'); setIsMenuOpen(false); }} className={menu === 'Home' ? 'active' : ''}>Home</Link>
-        <a href='#Explore-Menu' onClick={() => { setMenu('Menu'); setIsMenuOpen(false); }} className={menu === 'Menu' ? 'active' : ''}>Menu</a>
-        <a href='#Appdownload' onClick={() => { setMenu('App'); setIsMenuOpen(false); }} className={menu === 'App' ? 'active' : ''}>App</a>
+        <a href='#Explore-Menu' onClick={() => { setMenu('Menu'); setIsMenuOpen(false); }} className={menu === 'Menu' ? 'active' : ''}>Shop</a>
+        <a href='#Appdownload' onClick={() => { setMenu('App'); setIsMenuOpen(false); }} className={menu === 'App' ? 'active' : ''}>Product</a>
         <a href='#Footer' onClick={() => { setMenu('Contact us'); setIsMenuOpen(false); }} className={menu === 'Contact us' ? 'active' : ''}>Contact us</a>
       </div>
       

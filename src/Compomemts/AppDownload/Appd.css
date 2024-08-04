@@ -1,21 +1,77 @@
-.AppDownload{
-    margin: auto auto;
-    margin-top: 100px;
-    font-size: max(3vw, 20px);
-    text-align: center;
-    font-weight: 500;
-}
-.Appdownloadplatform{
+.AppDownload {
+    padding: 20px; /* Optional, for some spacing around the container */
+  }
+  
+  .container {
     display: flex;
-    justify-content: center;
-    gap: max(2vw, 10px);
-    margin-top: 40px;
-}
-.Appdownloadplatform img{
-    width: max(30vw, 120px);
-    max-width: 180px;
-    cursor: pointer;
-}
-.Appdownloadplatform img:hover{
-    transform: scale(1.05);
-}
+    gap: 30px; /* Sets the gap between the boxes */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+  }
+  
+  .box1, .box2, .box3, .box4 {
+    flex: 1; /* Ensures all boxes take up equal space */
+    background: #f0f0f0; /* Background color for visibility */
+    padding: 20px; /* Padding inside the boxes */
+    text-align: center; /* Center the text inside the boxes */
+    border: 1px solid #ccc; /* Border around the boxes */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .box1 img, .box2 img, .box3 img, .box4 img {
+    max-width: 100%; /* Ensure images fit within the box */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .box1 p, .box2 p, .box3 p, .box4 p {
+    margin-top: 10px; /* Spacing between image and text */
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 300px; /* Space between image and content */
+    margin-top: 30px;
+  }
+  
+  .mainimg {
+    flex: 1; /* Makes sure the image takes up available space */
+  }
+  
+  .mainimg img {
+    max-width: 208%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .content {
+    flex: 2; /* Makes sure the content area takes up more space */
+  }
+  
+  .content p, .content h2, .content button {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .content .pr {
+    margin-top: 10px; /* Optional spacing for the paragraph */
+    color: green;
+  }
+  
+  .content h2 {
+    margin-top: 20px; /* Optional spacing for the heading */
+    font-size: 2rem; /* Adjust as needed */
+  }
+  
+  .content button {
+    margin-top: 20px; /* Optional spacing for the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1rem; /* Font size for the button text */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .content button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  
