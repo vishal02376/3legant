@@ -4,7 +4,7 @@ import Navbar from "./Compomemts/Navbar/Navbar";
 import { Route, Routes } from 'react-router-dom';
 import Placeorder from './Pages/PlaceOrder/Placeorder';
 import Cart from './Pages/Cart/Cart';
-import Home from './Pages/Home/Home'; // Corrected path
+import Home from './Pages/Home/Home'; 
 import Footer from './Footer/Footer';
 import Login from './Compomemts/Loginpopop/Login';
 
